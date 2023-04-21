@@ -16,6 +16,7 @@
 
 <body>
     <div class="main-container">
+        <!--Header with nav-->
         <header>
             <img class="logo" src="images\logo\Booki.png" alt="Logo Booki" />
             <nav>                
@@ -23,13 +24,43 @@
                     <a href="#ancre_activites">Activités</a>                
             </nav>
         </header>
-        <main>
-            <!--<i class="fa-solid fa-money-bill-wave"></i>
-            <i class="fa-solid fa-person"></i>
-            <i class="fa-solid fa-heart"></i>
-            <i class="fa-solid fa-fire"></i>
-            <i class="fa-solid fa-location-dot"></i>
-            <i class="fa-solid fa-info"></i>-->
+        <main class="main">
+            <!--Search and filters-->
+            <div class="trouvez-votre-hebergement">
+                <div>
+                    <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                    <p>En plein centre-ville ou en pleine nature</p>
+                </div>
+                <div class="search-bar">
+                    <form method="get" action="">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <input type="search" placeholder="Marseille, France">
+                        <div class="buttons">
+                            <button class="rechercher" type="submit">Rechercher</button>
+                            <button class="magnifying-glass" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                            <div class="border">o</div>
+                        </div>
+                    </form>
+                </div>
+                <div class="filtres">
+                    <p class="filtres-title">Filtres</p>
+                    <div class="filtres1">
+                        <div class="filtres2">
+                            <button class="choice" type="submit"><i class="fa-solid fa-money-bill-wave"></i>Économique</button>
+                            <button class="choice" type="submit"><i class="fa-solid fa-person"></i>Familial</button>
+                        </div>
+                        <div class="filtres2">
+                            <button class="choice" type="submit"><i class="fa-solid fa-heart"></i>Romantique</button>
+                            <button class="choice" type="submit"><i class="fa-solid fa-fire"></i>Nos pépites</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="information">
+                    <div class="i-icon"><i class="fa-solid fa-info"></i></div>
+                    <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                </div>
+            </div>
+            <!--Accomodations-->
             <div class="hebergements-and-populaires">
                 <section class="hebergements">
                     <div class="hebergements-title">
@@ -96,12 +127,14 @@
                     </div>
                 </section>
             </div>
+            <!--Activities-->
             <section class="activites">
                 <div class="activites-title">
                     <h2 id="ancre_activites" class="section-title">Activités à Marseille</h2>
                 </div>
             </section>
         </main>
+        <!--Footer-->
         <footer></footer>
     </div>
 </body>
