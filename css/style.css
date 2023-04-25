@@ -365,6 +365,69 @@ input[type="search"]::-webkit-search-cancel-button { display: none; }
     margin-bottom: 5px;
 }
 
+/****** Activités ***********/
+.activites-title {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.activites-cards{
+    display: flex;
+    gap: 30px;
+}
+
+.activites-link{
+    width: 100%;
+}
+
+.activites-cards .card{
+    padding: 0px;
+    height: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.activites-cards .card-txt{
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.activites-cards .card-title{
+    padding: 20px 19px;
+    margin: 0px;
+}
+
+.activites-cards img {
+    width: 100%;
+    height: 380px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+/****** Footer ***********/
+.index-footer{
+    display: flex;
+    background-color: var(--main-bg-color);
+    margin-top: 65px;
+}
+
+.footer-categories{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+}
+
+.footer-list{
+    list-style: none;
+    padding: 0px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
 
 
 
@@ -406,6 +469,10 @@ input[type="search"]::-webkit-search-cancel-button { display: none; }
         width: 30%;
     }
 
+    .activites-cards img {
+        height: 200px;
+    }
+
 }
 
 /* Small devices (phones, less than 768px) */
@@ -436,7 +503,7 @@ input[type="search"]::-webkit-search-cancel-button { display: none; }
         border-bottom: 2px solid var(--main-color);
     }
 
-    .trouvez-votre-hebergement{
+    .trouvez-votre-hebergement, .activites{
         padding: 0px 20px;
     }
     
@@ -537,6 +604,21 @@ input[type="search"]::-webkit-search-cancel-button { display: none; }
     
     .link2{
         order: 6;
+    }
+
+    .activites-cards{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .index-footer{
+        flex-direction: column;
+        padding: 30px;
+        gap: 50px;
+    }
+
+    .footer-categories{
+        padding: 0px;
     }
 
 }
