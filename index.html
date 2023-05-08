@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -18,7 +18,7 @@
     <div class="main-container">
         <!--Header with nav-->
         <header>
-            <img class="logo" src="images\logo\Booki.png" alt="Logo Booki" />
+            <img class="logo" src="images/logo/Booki.png" alt="Logo Booki"/>
             <nav>                
                     <a class="navigation" href="#ancre_hebergements">Hébergements</a>
                     <a class="navigation" href="#ancre_activites">Activités</a>                
@@ -36,13 +36,13 @@
                         <i class="fa-solid fa-location-dot"></i>
                         <input type="search" placeholder="Marseille, France">
                         <button class="rechercher-button" type="submit">
-                            <span class="rechercher font18px700">Rechercher</span>
+                            <span class="rechercher">Rechercher</span>
                             <i class="fa-solid fa-magnifying-glass fa-2x"></i>
                         </button>
                     </form>
                 </div>
                 <div class="filtres">
-                    <p class="font18px700">Filtres</p>
+                    <h3>Filtres</h3>
                     <div class="filtres1">
                         <div class="filtres2">
                             <button class="choice" type="submit"><i class="fa-solid fa-money-bill-wave"></i>Économique</button>
@@ -61,6 +61,7 @@
             </div>
             <!--Accomodations-->
             <div class="hebergements-and-populaires">
+                <!--Hébergements-->
                 <section class="hebergements">
                     <div class="hebergements-title">
                         <h2 id="ancre_hebergements" class="section-title">Hébergements à Marseille</h2>
@@ -181,8 +182,9 @@
                             </article>
                         </a>
                     </div>
-                    <p class="font18px700"><a href="#">Afficher plus</a></p>
+                    <h3><a href="#">Afficher plus</a></h3>
                 </section>
+                <!--Populaires-->
                 <section class="populaires">
                     <div class="populaires-title">
                         <h2 class="section-title">Les plus populaires</h2>
@@ -254,7 +256,7 @@
                 <div class="activites-title">
                     <h2 id="ancre_activites" class="section-title">Activités à Marseille</h2>
                 </div>
-                <section class="activites-cards">
+                <div class="activites-cards">
                     <a class="activites-link" href="#">
                         <article class="card">
                             <img src="./images/activites/reno-laithienne.jpg" alt="Photo du Vieux-Port de Marseille">
@@ -287,27 +289,33 @@
                             </div>
                         </article>
                     </a>
-                </section>
+                </div>
             </section>
         </main>
         <!--Footer-->
         <footer class="index-footer">
-            <section class="footer-categories">
-                <div class="font18px700">À propos</div>
-                <div class="footer-list">Fonctionnement du site</div>
-                <div class="footer-list">Conditions générales</div>
-                <div class="footer-list">Données et confidentialité</div>
-            </section>
-            <section class="footer-categories">
-                <div class="font18px700">Nos hébergements</div>
-                <div class="footer-list">Charte qualité</div>
-                <div class="footer-list">Proposer votre hôtel</div>
-            </section>
-            <section class="footer-categories">
-                <div class="font18px700">Assistance</div>
-                <div class="footer-list">Centre d’aide</div>
-                <div class="footer-list">Nous contacter</div>
-            </section>
+            <div class="footer-categories">
+                <h3>À propos</h3>
+                <ul class="footer-list">
+                    <li class="footer-links"><a href="#">Fonctionnement du site</a></li>
+                    <li class="footer-links"><a href="#">Conditions générales</a></li>
+                    <li class="footer-links"><a href="#">Données et confidentialité</a></li>
+                </ul>
+            </div>
+            <div class="footer-categories">
+                <h3>Nos hébergements</h3>
+                <ul class="footer-list">
+                    <li class="footer-links"><a href="#">Charte qualité</a></li>
+                    <li class="footer-links"><a href="#">Proposer votre hôtel</a></li>
+                </ul>
+            </div>
+            <div class="footer-categories">
+                <h3>Assistance</h3>
+                <ul class="footer-list">
+                    <li class="footer-links"><a href="#">Centre d’aide</a></li>
+                    <li class="footer-links"><a href="#">Nous contacter</a></li>
+                </ul>
+            </div>
         </footer>
     </div>
 </body>
